@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <script defer type="text/javascript" src="js/main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Memory Game</title>
+</head>
+<body>
+    <section class="containerHome">
+        <h1 class="titleMain">Welcome To The Memory Game<br><span class="title2">(of Emojis 😊, food version)</span></h1>
+        <h3 class="subtitle">Select difficulty level 😕<span></span> </h3>
+        <ul class="cardLevel">
+            <li class="startEasy"><img src="img/easy.svg" alt="easy">Easy</li>
+            <li class="startNormal"><img src="img/normal.svg" alt="normal">Normal</li>
+            <li class="startHard"><img src="img/hard.svg" alt="hard">Hard</li>
+        <ul/>
+    </section>
+    <section class="screenGameEasy">
+        <div class="stats">
+            <img class="back" src="img/back.svg" alt="">
+            <div class="moves">0 moves</div>
+            <div class="pairs">Remaining pairs: 0</div>
+            <div class="timer">You have: 60 seconds</div>
+<!--             <button class="reload">aaa</button>                                    fuera de servicio por ahora-->        
+        </div>
+        <div class="containerGame">
+            <div class="boardContainer">
+                <div class="card">
+                    <div class="cardFront"></div>
+                    <div class="cardBack"></div>
+                </div>
+            </div>
+            <div class="win"></div>
+        </div>
+    </section>
+</body>
+</html>
