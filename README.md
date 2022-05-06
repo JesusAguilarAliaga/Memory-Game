@@ -1,4 +1,15 @@
+# Memory Game
+Play Now! https://jesusaguilaraliaga.github.io/Memory-Game/
+
 ## (ES)
+
+## Tecnologías usadas
+
+* JavaScript
+* CSS 
+* HTML
+
+## ¿Cómo se hizo?
 
 Hola, para empezar este proyecto, primero hice los diseños en Figma.
 ![Screenshot](screenshot.png)
@@ -16,6 +27,14 @@ trate de reducir el código lo máximo posible para que sea entendible.
 
 
 ## (EN)
+
+## Technologies
+
+* JavaScript
+* CSS 
+* HTML
+
+## ¿How it was made?
 
 Hello, to start this project, I first made the designs in Figma.
 ![Screenshot](screenshot.png)
