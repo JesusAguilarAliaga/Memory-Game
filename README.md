@@ -1,4 +1,4 @@
-(ES)
+##(ES)
 
 Hola, para empezar este proyecto, primero hice los diseños en Figma.
 ![Screenshot](screenshot.png)
@@ -15,7 +15,7 @@ Sobre la base del artículo, mejore y añadí un montón de cosas, haciéndolo m
 trate de reducir el código lo máximo posible para que sea entendible.
 
 
-(EN)
+##(EN)
 
 Hello, to start this project, I first made the designs in Figma.
 ![Screenshot](screenshot.png)
