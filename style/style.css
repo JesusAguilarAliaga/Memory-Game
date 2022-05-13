@@ -187,6 +187,22 @@ body{
     transform: rotateY(180deg) rotateZ(50deg);
 }
 
+.card.matched{
+    animation: correct 1s ease;
+}
+
+@keyframes correct {
+    0% {
+        background-color: rgba(0, 0, 0, .2);
+    }
+    50% {
+        background-color: rgb(255, 255, 255);
+    }
+    100% {
+        background-color: rgba(0, 0, 0, .2);
+    }
+}
+
 .cardFront{
     border: 1px solid #6F78A870;
     background-color: rgba(256, 256, 256, .3);

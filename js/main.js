@@ -18,7 +18,8 @@ const                                                                           
         timer = document.querySelector('.timer'),
         back = document.querySelector('.back'),
         win = document.querySelector('.win'),
-        card = document.querySelectorAll('.cardFront')
+        card = document.querySelectorAll('.cardFront'),
+        cardBack = document.querySelectorAll('.cardBack')
 
 
 const state = {                                                                         //un objeto que contiene todos los datos del juego
