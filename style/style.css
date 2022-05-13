@@ -187,7 +187,7 @@ body{
     transform: rotateY(180deg) rotateZ(50deg);
 }
 
-.card.matched{
+.card.flipped.matched{
     animation: correct 1s ease;
 }
 
