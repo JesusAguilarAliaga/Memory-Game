@@ -1,5 +1,6 @@
 # Memory Game
 Play Now! https://jesusaguilaraliaga.github.io/Memory-Game/
+> audio del click en las cartas desactivado en móvil, debido al retraso que tienen los navegadores para móvil de 300ms, da una mala experiencia el lag que hay :(
 
 ## (ES)
 
@@ -27,6 +28,7 @@ trate de reducir el código lo máximo posible para que sea entendible.
 
 
 ## (EN)
+> audio of the click on the cards disabled on mobile, due to the delay that mobile browsers have of 300ms, the lag that there is gives a bad experience :(
 
 ## Technologies
 

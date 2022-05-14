@@ -1,11 +1,6 @@
-/* const startEasy = document.querySelector('.startEasy');                    
-const startNormal = document.querySelector('.startNormal');
-const startHard = document.querySelector('.startHard');
-const reload = document.querySelector('.reload');
-const pairs = document.querySelector('.pairs');
- */
-const audio = new Audio('audio/click.mp3');
-const audio2 = new Audio('audio/click2.mp3');
+
+let audio = new Audio('audio/click.mp3');
+let audio2 = new Audio('audio/click2.mp3');
 audio.volume = 0.1;
 audio2.volume = 0.1;
 
@@ -71,6 +66,7 @@ startHard.addEventListener('click', () => {
 //media query for mobile
 const resizeWindow = () => {                                                    //al cambiar el tamaño de la pantalla, para que cuadros se adapten a móvil
     if(window.matchMedia("(max-width: 720px)").matches){
+        audio.volume = 0;
         return 60;
     }else{
         return 100;

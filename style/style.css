@@ -234,7 +234,7 @@ body{
 }
 
 .emoji{
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 
@@ -312,6 +312,10 @@ body{
     .pairs, .timer, .moves{
         width: auto;
         padding: 3px 15px;
+    }
+
+    .emoji{
+        font-size: 2.5rem;
     }
 
 }
