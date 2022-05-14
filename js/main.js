@@ -4,6 +4,11 @@ const startHard = document.querySelector('.startHard');
 const reload = document.querySelector('.reload');
 const pairs = document.querySelector('.pairs');
  */
+const audio = new Audio('audio/click.mp3');
+const audio2 = new Audio('audio/click2.mp3');
+audio.volume = 0.1;
+audio2.volume = 0.1;
+
 const                                                                                                /*almacenando clases en constantes*/
         startEasy = document.querySelector('.startEasy'),    
         startNormal = document.querySelector('.startNormal'),
@@ -19,7 +24,7 @@ const                                                                           
         back = document.querySelector('.back'),
         win = document.querySelector('.win'),
         card = document.querySelectorAll('.cardFront'),
-        cardBack = document.querySelectorAll('.cardBack')
+        cardBack = document.querySelector('.cardBack')
 
 
 const state = {                                                                         //un objeto que contiene todos los datos del juego
@@ -40,9 +45,11 @@ const figures2 = ['🍎', '🍒', '🥑', '🌽', '🥕', '🍇', '🍉', '🍌'
 //event listener for button start                                                           //al hacer click en el nivel seleccionado
 startEasy.addEventListener('click', () => {                                                 //llama a la función con distintos parámetros
     generator(4, 4, figures)                                                                //de acuerdo al nivel seleccionado
+    audio2.play();
 });
 
 startNormal.addEventListener('click', () => {
+    audio2.play();
     if(window.matchMedia("(max-width: 720px)").matches){
         generator(6, 4, figures1)
     }else{
@@ -51,6 +58,7 @@ startNormal.addEventListener('click', () => {
 });
 
 startHard.addEventListener('click', () => {
+    audio2.play();
     if(window.matchMedia("(max-width: 720px)").matches){
         generator(6, 5, figures2)
     }else{
@@ -187,12 +195,13 @@ function generator(rows, files, figures){
     }, 1000);
 
     const attachEventListeners = () => {                                                                    //attachEventListeners trabaja con la interacción en el DOM y añade los eventListeners a cada tarjeta
-        document.addEventListener('click', (e) => {                                                         
+        document.addEventListener('click', (e) => {
             const eventTarget = e.target
             const eventParent = eventTarget.parentElement                                                   //eventParent almacena el nombre del padre del elemento que se ha pulsado
     
             if (eventTarget.className.includes('card') && !eventParent.className.includes('flipped')) {     //comprueba si el elemento pulsado tiene la clase card y no tiene la clase flipped
                 flipCard(eventParent)                                                                       //llama a la función flipCard que es la que se encarga de comprobar la tarjeta, para darle vuelta
+                audio.play();
             }
         })
     }
@@ -224,9 +233,6 @@ back.addEventListener('click', () => {                                          
 window.addEventListener('resize', () => {                                                                   //esto es un apoyo al diseño responsive
     location.reload();
 });
-
-
-
 
 
 
